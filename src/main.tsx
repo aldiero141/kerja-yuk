@@ -10,5 +10,5 @@ createRoot(document.getElementById("root")!).render(
     <QueryClientProvider client={queryClient}>
       <AppRoutes />
     </QueryClientProvider>
-  </StrictMode>
+  </StrictMode>,
 );
