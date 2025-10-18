@@ -5,7 +5,7 @@ import HomeOnlineStatus from "@/components/home-page/HomeOnlineStatus";
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col  gap-2 h-full">
+    <div className="flex flex-col gap-2 h-full pb-24">
       <HomeHero />
       <HomeActivity />
       <HomeNews />
