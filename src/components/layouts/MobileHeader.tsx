@@ -1,15 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { IconBell } from "@tabler/icons-react";
+import { NavLink } from "react-router";
 
 export default function HomeHeader() {
   return (
-    <nav className="flex justify-between items-center pb-2">
+    <nav className="flex justify-between items-center px-6 py-2">
       <h1 className="text-2xl font-bold text-primary">KerjaYuk!</h1>
-      <div>
+      <NavLink to="/notification">
         <Button variant="ghost">
           <IconBell className="size-5" />
         </Button>
-      </div>
+      </NavLink>
     </nav>
   );
 }
