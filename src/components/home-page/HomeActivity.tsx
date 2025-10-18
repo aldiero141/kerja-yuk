@@ -3,10 +3,8 @@ import { RotateCw } from "lucide-react";
 
 export default function HomeActivity() {
   return (
-    <div className="flex flex-col gap-2 py-4">
-      <h2 className="text-base font-medium text-black px-2">
-        Today's Activity
-      </h2>
+    <div className="flex flex-col gap-2 py-4 px-3">
+      <h2 className="text-base font-medium text-black">Today's Activity</h2>
       <div className="grid grid-cols-3 w-full gap-2">
         <div className="flex flex-col items-center">
           <IconClockHour9 className="text-primary size-9 mb-2" />
