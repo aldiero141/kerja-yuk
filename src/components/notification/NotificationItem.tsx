@@ -1,14 +1,8 @@
 import { cn } from "@/lib/utils";
+import type { Notification } from "@/features/notification/type";
 
 type Props = {
-  notification: {
-    type: string;
-    title: string;
-    status: string;
-    message: string;
-    time: string;
-    isRead: boolean;
-  };
+  notification: Notification;
 };
 
 export default function NotificationItem({ notification }: Props) {
@@ -28,7 +22,7 @@ export default function NotificationItem({ notification }: Props) {
   return (
     <div
       className={cn(
-        "flex flex-row gap-2 justify-between px-6 py-4",
+        "flex flex-row gap-3 justify-between px-6 py-4",
         notification.isRead ? "bg-white" : "bg-blue-500/10"
       )}
     >
@@ -40,7 +34,7 @@ export default function NotificationItem({ notification }: Props) {
         />
       </div>
 
-      <div className="flex flex-col w-[280px]">
+      <div className="flex flex-col w-[70%]">
         <h1 className="font-bold text-base -mt-1">{notification.title}</h1>
         <p className="text-sm text-muted-foreground w-full line-clamp-3 text-ellipsis ">
           {notification.message}
