@@ -16,7 +16,10 @@ export default function HomeOnlineStatus() {
               <div className="flex items-center justify-center border border-gray-200 rounded-xl shadow px-4 py-4">
                 <div className="flex -space-x-1">
                   {onlineUser?.data.slice(0, 8).map((user, index) => (
-                    <div className="flex flex-col items-center">
+                    <div
+                      key={`online-user-${index}`}
+                      className="flex flex-col items-center"
+                    >
                       <img
                         key={index}
                         className="rounded-full ring-2 ring-background"

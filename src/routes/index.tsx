@@ -1,26 +1,26 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import MobileLayout from "../components/layouts/MobileLayout";
-import Attendance from "../pages/Attendance";
-import Form from "../pages/Form";
-import Graph from "../pages/Graph";
-import Home from "../pages/Home";
-import NotFound from "../pages/NotFound";
-import Notification from "../pages/Notification";
-import Settings from "../pages/Settings";
+import AttendancePage from "../pages/Attendance";
+import FormPage from "../pages/Form";
+import GraphPage from "../pages/Graph";
+import HomePage from "../pages/Home";
+import NotFoundPage from "../pages/NotFound";
+import NotificationPage from "../pages/Notification";
+import SettingsPage from "../pages/Settings";
 
 const router = createBrowserRouter([
-  { path: "*", element: <NotFound /> },
+  { path: "*", element: <NotFoundPage /> },
   { path: "/", element: <Navigate to="/home" replace /> },
-  { path: "/notification", element: <Notification /> },
-  { path: "/graph", element: <Graph /> },
+  { path: "/notification", element: <NotificationPage /> },
+  { path: "/graph", element: <GraphPage /> },
   {
     element: <MobileLayout />,
     children: [
-      { path: "/home", element: <Home /> },
-      { path: "/attendance", element: <Attendance /> },
-      { path: "/form", element: <Form /> },
-      { path: "/settings", element: <Settings /> },
+      { path: "/home", element: <HomePage /> },
+      { path: "/attendance", element: <AttendancePage /> },
+      { path: "/form", element: <FormPage /> },
+      { path: "/settings", element: <SettingsPage /> },
     ],
   },
 ]);

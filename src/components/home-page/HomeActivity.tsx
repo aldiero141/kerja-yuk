@@ -11,25 +11,27 @@ export default function HomeActivity() {
       <div className="grid grid-cols-3 w-full gap-2">
         <div className="flex flex-col items-center">
           <IconClockHour9 className="text-primary size-9 mb-2" />
-          {isLoading
-            ? (
-                <Skeleton className="h-4 w-10 rounded-xl" />
-              )
-            : activity?.data?.checkinTime
+          <>
+            {isLoading
               ? (
-                  <p className="text-sm font-semibold">
-                    {activity?.data.checkinTime}
-                  </p>
+                  <Skeleton className="h-4 w-10 rounded-xl" />
                 )
-              : (
-                  <p className="text-sm font-semibold">--:--</p>
-                )}
+              : activity?.data?.checkinTime
+                ? (
+                    <p className="text-sm font-semibold">
+                      {activity?.data.checkinTime}
+                    </p>
+                  )
+                : (
+                    <p className="text-sm font-semibold">--:--</p>
+                  )}
+          </>
           <p className="text-sm ">Check In</p>
         </div>
         <div className="flex flex-col items-center">
           <div className="flex items-center relative">
             <RotateCw className="text-primary size-9 mb-2" />
-            <p className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs font-bold text-primary">
+            <div className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xs font-bold text-primary">
               {isLoading
                 ? (
                     <Skeleton className="h-4 w-4 rounded-xl" />
@@ -41,7 +43,7 @@ export default function HomeActivity() {
                   : (
                       "--:--"
                     )}
-            </p>
+            </div>
           </div>
           {isLoading
             ? (
