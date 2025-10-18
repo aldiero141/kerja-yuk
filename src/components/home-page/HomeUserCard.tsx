@@ -8,7 +8,7 @@ type Props = {
 
 export default function HomeUserCard({ user }: Props) {
   return (
-    <Card className="bg-gradient-to-r from-primary to-[#C5105F] text-white py-4 h-32">
+    <Card className="bg-gradient-to-r from-primary to-[#C11965] text-white py-4 h-32">
       <CardContent className="px-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <div className="flex items-start gap-2">

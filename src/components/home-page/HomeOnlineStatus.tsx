@@ -35,7 +35,7 @@ export default function HomeOnlineStatus() {
                   {onlineUser?.data.length > 8 && (
                     <Button
                       variant="ghost"
-                      className="flex size-10 items-center justify-center rounded-full bg-secondary text-xs bg-gradient-to-r from-primary to-[#C5105F] text-white
+                      className="flex size-10 items-center justify-center rounded-full bg-secondary text-xs bg-gradient-to-r from-primary to-[#C11965] text-white
                     ring-2 ring-background hover:bg-secondary hover:text-foreground"
                       size="icon"
                     >
