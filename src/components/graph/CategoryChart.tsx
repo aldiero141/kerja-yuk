@@ -1,5 +1,12 @@
 import type { ChartConfig } from "@/components/ui/chart";
-import { Bar, BarChart, CartesianGrid, Rectangle, XAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Rectangle,
+  XAxis,
+  YAxis,
+} from "recharts";
 import {
   Card,
   CardContent,
@@ -8,7 +15,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import {
-
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
@@ -50,8 +56,15 @@ export default function CategoryChart({ counts }: any) {
               tickLine={false}
               tickMargin={10}
               axisLine={false}
-              tickFormatter={value =>
+              tickFormatter={(value: any) =>
                 chartConfig[value as keyof typeof chartConfig]?.label}
+            />
+            <YAxis
+              tickLine={false}
+              tickMargin={10}
+              domain={[0, 6]}
+              axisLine={false}
+              tickFormatter={(value: any) => value}
             />
             <ChartTooltip
               cursor={false}
