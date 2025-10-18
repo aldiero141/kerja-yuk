@@ -11,11 +11,10 @@ import Settings from "../pages/Settings";
 const router = createBrowserRouter([
   { path: "*", element: <NotFound /> },
   { path: "/", element: <Navigate to="/home" replace /> },
-
+  { path: "/notification", element: <Notification /> },
   {
     element: <MobileLayout />,
     children: [
-      { path: "/notification", element: <Notification /> },
       { path: "/home", element: <Home /> },
       { path: "/attendance", element: <Attendance /> },
       { path: "/form", element: <Form /> },
