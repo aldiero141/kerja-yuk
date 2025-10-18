@@ -37,7 +37,7 @@ export default function HomeUserCard({ user }: Props) {
               {user?.officeLocation}
             </p>
           </div>
-          <div className="flex flex-col h-full self-end m-0 p-0 text-right">
+          <div className="flex flex-col h-full justify-end self-end m-0 p-0 text-right">
             <p className="text-xs font-thin m-0 p-0 italic">ICO</p>
           </div>
         </div>
