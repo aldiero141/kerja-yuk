@@ -1,10 +1,10 @@
 import type { Notification } from "@/features/notification/type";
-import { useNotification } from "@/features/notification/query";
+import { useGetNotification } from "@/features/notification/query";
 import NotificationItem from "./NotificationItem";
 import NotificationListSkeleton from "./NotificationListSkeleton";
 
 export default function NotificationList() {
-  const { data: notifications, isLoading } = useNotification();
+  const { data: notifications, isLoading } = useGetNotification();
   return (
     <div className="flex flex-col w-full">
       {isLoading
