@@ -1,5 +1,5 @@
-import { create } from "zustand";
 import type { User } from "@/features/user/type";
+import { create } from "zustand";
 
 type UserState = {
   user: User;
@@ -25,5 +25,5 @@ const useUserStore = create<UserState>((set) => {
   };
 });
 
-export const useUser = () => useUserStore((state) => state.user);
-export const useUserActions = () => useUserStore((state) => state.actions);
+export const useUser = () => useUserStore(state => state.user);
+export const useUserActions = () => useUserStore(state => state.actions);

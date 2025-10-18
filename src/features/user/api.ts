@@ -1,5 +1,5 @@
 import type { APIResponse } from "../type";
-import type { User, OnlineUser } from "./type";
+import type { OnlineUser, User } from "./type";
 
 const user: User = {
   name: "John Doe",

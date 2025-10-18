@@ -1,6 +1,6 @@
-import { Card, CardContent } from "../ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import type { User } from "@/features/user/type";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { Card, CardContent } from "../ui/card";
 
 type Props = {
   user: User;

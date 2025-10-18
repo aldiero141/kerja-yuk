@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import type { Notification } from "@/features/notification/type";
+import { cn } from "@/lib/utils";
 
 type Props = {
   notification: Notification;
@@ -23,7 +23,7 @@ export default function NotificationItem({ notification }: Props) {
     <div
       className={cn(
         "flex flex-row gap-3 justify-between px-6 py-4",
-        notification.isRead ? "bg-white" : "bg-blue-500/10"
+        notification.isRead ? "bg-white" : "bg-blue-500/10",
       )}
     >
       <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center ">

@@ -1,6 +1,6 @@
 import { IconChevronLeft } from "@tabler/icons-react";
-import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router";
+import { Button } from "@/components/ui/button";
 
 export default function NotificationHeader() {
   const navigate = useNavigate();

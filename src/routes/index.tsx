@@ -1,11 +1,11 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import NotFound from "../pages/NotFound";
-import Home from "../pages/Home";
-import Notification from "../pages/Notification";
 import MobileLayout from "../components/layouts/MobileLayout";
 import Attendance from "../pages/Attendance";
 import Form from "../pages/Form";
+import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
+import Notification from "../pages/Notification";
 import Settings from "../pages/Settings";
 
 const router = createBrowserRouter([

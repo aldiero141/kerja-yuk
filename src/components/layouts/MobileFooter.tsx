@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   IconCalendarWeekFilled,
   IconDoorExit,
@@ -6,8 +5,9 @@ import {
   IconHomeFilled,
   IconSettingsFilled,
 } from "@tabler/icons-react";
-import { useLocation } from "react-router";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
+
+import { Button } from "@/components/ui/button";
 
 export default function HomeFooter() {
   const { pathname } = useLocation();
