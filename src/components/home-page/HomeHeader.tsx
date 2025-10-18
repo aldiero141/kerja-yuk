@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Bell } from "lucide-react";
+import { IconBell } from "@tabler/icons-react";
 
 export default function HomeHeader() {
   return (
@@ -7,7 +7,7 @@ export default function HomeHeader() {
       <h1 className="text-2xl font-bold text-primary">KerjaYuk!</h1>
       <div>
         <Button variant="ghost">
-          <Bell className="size-5" />
+          <IconBell className="size-5" />
         </Button>
       </div>
     </nav>

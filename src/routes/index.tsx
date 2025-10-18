@@ -4,6 +4,9 @@ import NotFound from "../pages/NotFound";
 import Home from "../pages/Home";
 import Notification from "../pages/Notification";
 import MobileLayout from "../components/layouts/MobileLayout";
+import Attendance from "../pages/Attendance";
+import Form from "../pages/Form";
+import Settings from "../pages/Settings";
 
 const router = createBrowserRouter([
   { path: "*", element: <NotFound /> },
@@ -14,6 +17,9 @@ const router = createBrowserRouter([
     children: [
       { path: "/home", element: <Home /> },
       { path: "/notification", element: <Notification /> },
+      { path: "/attendance", element: <Attendance /> },
+      { path: "/form", element: <Form /> },
+      { path: "/settings", element: <Settings /> },
     ],
   },
 ]);
